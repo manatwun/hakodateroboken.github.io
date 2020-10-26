@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>R2ロボコンテストサイト</title>
+</head>
+
+<body class="main">
+  <header class="top">
+    <img src="pic/S__522870787.jpg" alt="ヘッダー写真"  height="300px">
+  </header>
+  <section class="sound">
+    <h1 class="title">2 minute in dream 動作サイト</h1>
+    <p class="sub-title">サンプル:好きな名前を入れてね</p>
+    <!-- ボタンの設置 -->
+    <ul class="button">
+      <li class="button_outside left">
+        <button class="button_core" onclick="ring1()">
+          左旋回
+        </button>
+        </div>
+      </li>
+      <li class="button_outside go">
+        <button class="button_core" onclick="ring2()">
+          前進
+        </button>
+        </div>
+      </li>
+      <li class="button_outside right">
+        <button class="button_core" onclick="ring3()">
+          右旋回
+        </button>
+        </div>
+      </li>
+      <li class="button_outside stop">
+        <button class="button_core" onclick="ring4()">
+          停止
+        </button>
+        </div>
+      </li>
+    </ul>
+    <!-- 音声ファイルの読み込み -->
+    <audio id="play1">
+      <source src="audio/RIGHT.mp3" type="audio/mp3">
+    </audio>
+    <audio id="play2">
+      <source src="audio/LEFT.mp3" type="audio/mp3">
+    </audio>
+    <script type="text/javascript">
+      let value1 = 0;
+      function ring1() {
+        document.getElementById("play1").load();
+        document.getElementById("play1").play();
+        document.getElementById("play2").pause();
+      }
+      function ring2() {
+        document.getElementById("play2").load();
+        document.getElementById("play2").play();
+        document.getElementById("play1").pause();
+      }
+      function ring3() {
+        document.getElementById("play1").load();
+        document.getElementById("play1").play();
+        document.getElementById("play2").load();
+        document.getElementById("play2").play();
+      }
+      function ring4() {
+        document.getElementById("play1").pause();
+        document.getElementById("play2").pause();
+      }
+    </script>
+  </section>
+
+</body>
+
+</html>
+
+</li>
+
+
+
+
+
