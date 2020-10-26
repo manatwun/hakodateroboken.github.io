@@ -1,0 +1,80 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+@media only screen and (max-width: 750px) {
+}
+.main {
+  background-image: url("pic/kotho.png");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+.top {
+  text-align: center;
+  width: 1100px;
+  height: min-content;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.sound {
+  text-align: center;
+  width: 1100px;
+  margin: auto;
+  padding: 0 40px;
+}
+.button {
+  width: 550px;
+  text-align: center;
+  margin: auto;
+  /*text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;*/
+}
+.button_outside {
+  width: min-content;
+  margin: auto;
+  text-align: center;
+}
+.button_core {
+  width: 90px;
+  height: 40px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8; /*ボタン色*/
+  color: #fff;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.button_core:active {
+  /*ボタンを押したとき*/
+  transform: translateY(4px);
+  transform: translateY(4px); /*下に動く*/
+  border-bottom: none; /*線を消す*/
+}
+.go {
+  position: relative;
+}
+.left {
+  position: relative;
+  right: 180px;
+  top: 120px;
+}
+.right {
+  position: relative;
+  left: 180px;
+  top: 40px;
+}
+.bott {
+  margin-top: 50px;
+  text-align: center;
+}
+.sns {
+  width: 1070px;
+  margin: auto;
+}
+.ins {
+  position: absolute;
+}
